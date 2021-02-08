@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wealth-creation {
+    margin: 0;
+    padding: 0;
+}
+
+
+#wealth-creation hr.line {
+    width: 80px;
+    height: 4px;
+    background-color: #B02A30;
+    opacity: 100%
+}
+#wealth-creation .wealth-creation{
+    height:100vh;width:100vw;display:grid;place-items:center
+}
+#wealth-creation .calculator-area {
+    padding: 40px 60px;
+    box-shadow: 10px 10px 30px grey;
+    border-radius: 10px;
+}
+#wealth-creation .name-input {
+    background-color: #FDF5E1;
+    padding: 80px 30px;
+}
+
+#wealth-creation ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+#wealth-creation ol li {
+    counter-increment: my-awesome-counter;
+}
+
+#wealth-creation ol li::before {
+    content: counter(my-awesome-counter) ") ";
+}
+
+#wealth-creation {}
+
+#wealth-creation {}
+
+#wealth-creation {}
+
+#wealth-creation {}
+
+#wealth-creation-annual-income,
+#wealth-creation-financial-income,
+#wealth-creation-current-age,
+#wealth-creation-age-goal,
+#wealth-creation-upfront-investment,
+#wealth-creation-risk{display: none;}
