@@ -24,81 +24,111 @@
                         <p class="">Step 1</p>
                         <p class="">Goal Setting</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 calculator-area-input">
                         <h2 class="">Hi User, let's take a step closer to your dreams</h2>
                         <p class="">We look forward to help create wealth for you</p>
                         <div id="wealth-creation-name" class="name-input">
                             <h6 class="">What can i call you?</h6>
                             <div class="mb-3">
-                                <input id="wealth-name" class="form-control" type="text" name="" value="">
+                                <input id="wealth-name" class="form-control" type="text" name="" value=""
+                                    placeholder="Name">
                             </div>
                             <div class="ms-0">
-                                <button  id="wealth-name-next" class="btn btn-primary">Next</button>
+                                <button id="wealth-name-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        
+
                         <div id="wealth-creation-annual-income" class="name-input">
                             <h6 class="">How much do you earn annually?</h6>
                             <div class="mb-3">
-                                <input id="" class="form-control" type="text" name="" value="">
+                                <input id="wealth-annual-income" class="form-control" type="text" name="" value=""
+                                    placeholder="Annual income">
                             </div>
                             <div class="ms-0">
                                 <button id="wealth-annual-previous" class="btn btn-primary">Previous</button>
                                 <button id="wealth-annual-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        
+
                         <div id="wealth-creation-financial-income" class="name-input">
                             <h6 class="">What is the current cost of your financial goal?</h6>
                             <div class="mb-3">
-                                <input id="" class="form-control" type="text" name="" value="">
+                                <input id="wealth-financial-income" class="form-control" type="text" name="" value=""
+                                    placeholder="Goal">
                             </div>
                             <div class="ms-0">
                                 <button id="wealth-financial-previous" class="btn btn-primary">Previous</button>
                                 <button id="wealth-financial-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        
+
                         <div id="wealth-creation-current-age" class="name-input">
-                            <h6 class="">What can i call you?</h6>
+                            <h6 class="">How old are you?</h6>
                             <div class="mb-3">
-                                <input id="" class="form-control" type="text" name="" value="">
+                                <input id="wealth-current-age" class="form-control" type="text" name="" value=""
+                                    placeholder="Current age">
                             </div>
                             <div class="ms-0">
-                                <a href="" class="btn btn-primary">Next</a>
+                                <button id="wealth-age-previous" class="btn btn-primary">Previous</button>
+                                <button id="wealth-age-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        
+
                         <div id="wealth-creation-age-goal" class="name-input">
-                            <h6 class="">What can i call you?</h6>
+                            <h6 class="">At what age do you wish to achieve your goal?</h6>
                             <div class="mb-3">
-                                <input id="" class="form-control" type="text" name="" value="">
+                                <input id="wealth-age-goal" class="form-control" type="text" name="" value="" placeholder="Age goal">
                             </div>
                             <div class="ms-0">
-                                <a href="" class="btn btn-primary">Next</a>
+                                <button id="wealth-age-goal-previous" class="btn btn-primary">Previous</button>
+                                <button id="wealth-age-goal-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        
+
                         <div id="wealth-creation-upfront-investment" class="name-input">
-                            <h6 class="">What can i call you?</h6>
+                            <h6 class="">How much have you saved for your goal?</h6>
                             <div class="mb-3">
-                                <input id="" class="form-control" type="text" name="" value="">
+                                <input id="wealth-investment" class="form-control" type="text" name="" value="" placeholder="saving">
                             </div>
                             <div class="ms-0">
-                                <a href="" class="btn btn-primary">Next</a>
+                                <button id="wealth-investment-previous" class="btn btn-primary">Previous</button>
+                                <button id="wealth-investment-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        
+
                         <div id="wealth-creation-risk" class="name-input">
-                            <h6 class="">What can i call you?</h6>
-                            <div class="mb-3">
-                                <input id="" class="form-control" type="text" name="" value="">
+                            <h6 class="">What is your risk aptitude?</h6>
+                            <div class="radion mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Low Risk
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" >
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Moderate Risk
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" >
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        High Risk
+                                    </label>
+                                </div>
                             </div>
                             <div class="ms-0">
-                                <a href="" class="btn btn-primary">Next</a>
+                                <button id="wealth-risk-previous" class="btn btn-primary">Previous</button>
+                            </div>
+                            <div class="">
+                                <a href="" class="">Need help deciding?</a>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-lg-4">
                         <div class="">
@@ -106,12 +136,12 @@
                             <p class="">Click below to change answers</p>
                             <ol>
                                 <li class="">Name: <span id="name-display"></span></li>
-                                <li class="">Annual Income<span id=""></span></li>
-                                <li class="">Cost of your financial income: <span id=""></span></li>
-                                <li class="">Current Age: <span id=""></span></li>
-                                <li class="">Age as an goal achievement: <span id=""></span></li>
-                                <li class="">Upfront Investment: <span id=""></span></li>
-                                <li class="">Risk Appetite: <span id=""></span></li>
+                                <li class="">Annual Income: <span id="annual-income-display"></span></li>
+                                <li class="">Cost of your financial income: <span id="financial-income-display"></span></li>
+                                <li class="">Current Age: <span id="current-age-display"></span></li>
+                                <li class="">Age as an goal achievement: <span id="age-goal-display"></span></li>
+                                <li class="">Upfront Investment: <span id="investment-display"></span></li>
+                                <li class="">Risk Appetite: <span id="risk-display"></span></li>
                             </ol>
                         </div>
                     </div>

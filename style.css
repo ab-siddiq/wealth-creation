@@ -41,8 +41,29 @@
     content: counter(my-awesome-counter) ") ";
 }
 
-#wealth-creation {}
-
+#wealth-creation .calculator-area-input input[type=text]{
+    border-radius: 40px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border:1px solid #fff;
+}
+#wealth-creation .calculator-area-input input[type=text]:hover{
+    
+    border: 1px solid #B02A30;
+}
+#wealth-creation .calculator-area-input button{
+    border-radius: 50px;
+    background-color: #B02A30;
+    border: 1px solid #fff;
+}
+#wealth-creation .calculator-area-input button:hover{
+    background-color: #FDF5E1;
+    border: 1px solid #B02A30;
+    color: #B02A30;
+}
+#wealth-creation .calculator-area-input input[type=radio]:checked:after{
+    background-color: red;
+}
 #wealth-creation {}
 
 #wealth-creation {}
