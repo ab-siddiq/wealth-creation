@@ -158,3 +158,175 @@ wealthRiskPrevious.addEventListener("click", function () {
     
     document.getElementById("risk-display").innerHTML  = riskInput;
 })
+
+
+
+
+
+// question one
+
+const wealthQuestionOneNext = document.getElementById("wealth-question-one-next");
+wealthQuestionOneNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionOne = document.getElementById("wealth-question-one");
+    const wealthQuestionTwo = document.getElementById("wealth-question-two");
+    wealthQuestionTwo.style.display = "block";
+    wealthQuestionOne.style.display = "none";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})
+
+
+// question two
+const wealthQuestionTwoPrevious = document.getElementById("wealth-question-two-previous");
+const wealthQuestionTwoNext = document.getElementById("wealth-question-two-next");
+
+wealthQuestionTwoPrevious.addEventListener("click", function () {
+    const wealthQuestionOne = document.getElementById("wealth-question-one");
+    const wealthQuestionTwo = document.getElementById("wealth-question-two");
+    wealthQuestionOne.style.display = "block";
+    wealthQuestionTwo.style.display = "none";
+    
+})
+
+wealthQuestionTwoNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionThree = document.getElementById("wealth-question-three");
+    const wealthQuestionTwo = document.getElementById("wealth-question-two");
+    wealthQuestionThree.style.display = "block";
+    wealthQuestionTwo.style.display = "none";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})
+
+
+// question three
+const wealthQuestionThreePrevious = document.getElementById("wealth-question-three-previous");
+const wealthQuestionThreeNext = document.getElementById("wealth-question-three-next");
+
+wealthQuestionThreePrevious.addEventListener("click", function () {
+    const wealthQuestionThree = document.getElementById("wealth-question-three");
+    const wealthQuestionTwo = document.getElementById("wealth-question-two");
+    wealthQuestionThree.style.display = "none";
+    wealthQuestionTwo.style.display = "block";
+    
+})
+
+wealthQuestionThreeNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionThree = document.getElementById("wealth-question-three");
+    const wealthQuestionFour = document.getElementById("wealth-question-four");
+    wealthQuestionThree.style.display = "none";
+    wealthQuestionFour.style.display = "block";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})
+
+
+// question four
+const wealthQuestionFourPrevious = document.getElementById("wealth-question-four-previous");
+const wealthQuestionFourNext = document.getElementById("wealth-question-four-next");
+
+wealthQuestionFourPrevious.addEventListener("click", function () {
+    const wealthQuestionThree = document.getElementById("wealth-question-three");
+    const wealthQuestionFour = document.getElementById("wealth-question-four");
+    wealthQuestionThree.style.display = "block";
+    wealthQuestionFour.style.display = "none";
+    
+})
+
+wealthQuestionFourNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionFive = document.getElementById("wealth-question-five");
+    const wealthQuestionFour = document.getElementById("wealth-question-four");
+    wealthQuestionFive.style.display = "block";
+    wealthQuestionFour.style.display = "none";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})
+// question five
+const wealthQuestionFivePrevious = document.getElementById("wealth-question-five-previous");
+const wealthQuestionFiveNext = document.getElementById("wealth-question-five-next");
+
+wealthQuestionFivePrevious.addEventListener("click", function () {
+    const wealthQuestionFour = document.getElementById("wealth-question-four");
+    const wealthQuestionFive = document.getElementById("wealth-question-five");
+    wealthQuestionFour.style.display = "block";
+    wealthQuestionFive.style.display = "none";
+    
+})
+
+wealthQuestionFiveNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionFive = document.getElementById("wealth-question-five");
+    const wealthQuestionSix = document.getElementById("wealth-question-six");
+    wealthQuestionFive.style.display = "none";
+    wealthQuestionSix.style.display = "block";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})
+
+// question six
+const wealthQuestionSixPrevious = document.getElementById("wealth-question-six-previous");
+const wealthQuestionSixNext = document.getElementById("wealth-question-six-next");
+
+wealthQuestionSixPrevious.addEventListener("click", function () {
+    const wealthQuestionSix = document.getElementById("wealth-question-six");
+    const wealthQuestionFive = document.getElementById("wealth-question-five");
+    wealthQuestionSix.style.display = "none";
+    wealthQuestionFive.style.display = "block";
+    
+})
+
+wealthQuestionSixNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionSeven = document.getElementById("wealth-question-seven");
+    const wealthQuestionSix = document.getElementById("wealth-question-six");
+    wealthQuestionSeven.style.display = "block";
+    wealthQuestionSix.style.display = "none";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})
+
+// question seven
+const wealthQuestionSevenPrevious = document.getElementById("wealth-question-seven-previous");
+const wealthQuestionSevenNext = document.getElementById("wealth-question-seven-next");
+
+wealthQuestionSevenPrevious.addEventListener("click", function () {
+    const wealthQuestionSix = document.getElementById("wealth-question-six");
+    const wealthQuestionSeven = document.getElementById("wealth-question-seven");
+    wealthQuestionSix.style.display = "block";
+    wealthQuestionSeven.style.display = "none";
+    
+})
+
+wealthQuestionSevenNext.addEventListener("click", function () {
+    // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+    // console.log(annualIncomeInput);
+
+
+    const wealthQuestionSeven = document.getElementById("wealth-question-seven");
+    const wealthQuestionSix = document.getElementById("wealth-question-six");
+    wealthQuestionSeven.style.display = "block";
+    wealthQuestionSix.style.display = "none";
+
+    // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+})

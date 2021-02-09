@@ -64,10 +64,18 @@
 #wealth-creation .calculator-area-input input[type=radio]:checked:after{
     background-color: red;
 }
-#wealth-creation  .question-box{margin:50px 200px;}
-#wealth-creation  .question-box h5{background-color: #F5F5F5; padding: 30px 10px;}
+/* #wealth-creation  .question-box{margin:50px 200px;} */
+#wealth-creation  .question-box h5{background-color: #B02A30;color: #fff; padding: 30px 20px; border-radius: 10px;}
 
 #wealth-creation {}
+#wealth-question-two,
+#wealth-question-three,
+#wealth-question-four,
+#wealth-question-five,
+#wealth-question-six,
+#wealth-question-seven{
+    display: none;
+}
 
 #wealth-creation {}
 
