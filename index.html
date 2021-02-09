@@ -20,13 +20,16 @@
                     <hr class="line m-auto">
                 </div>
                 <div class="row ">
+                    <!-- left part -->
                     <div class="col-lg-2">
                         <p class="">Step 1</p>
                         <p class="">Goal Setting</p>
                     </div>
+                    <!-- middle part -->
                     <div class="col-lg-6 calculator-area-input">
                         <h2 class="">Hi User, let's take a step closer to your dreams</h2>
                         <p class="">We look forward to help create wealth for you</p>
+                        <!-- wealth-creation-name -->
                         <div id="wealth-creation-name" class="name-input">
                             <h6 class="">What can i call you?</h6>
                             <div class="mb-3">
@@ -37,7 +40,7 @@
                                 <button id="wealth-name-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-
+                        <!-- wealth-creation-annual-income -->
                         <div id="wealth-creation-annual-income" class="name-input">
                             <h6 class="">How much do you earn annually?</h6>
                             <div class="mb-3">
@@ -49,7 +52,7 @@
                                 <button id="wealth-annual-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-
+                        <!-- wealth-creation-financial-income -->
                         <div id="wealth-creation-financial-income" class="name-input">
                             <h6 class="">What is the current cost of your financial goal?</h6>
                             <div class="mb-3">
@@ -61,7 +64,7 @@
                                 <button id="wealth-financial-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-
+                        <!-- wealth-creation-current-age -->
                         <div id="wealth-creation-current-age" class="name-input">
                             <h6 class="">How old are you?</h6>
                             <div class="mb-3">
@@ -73,7 +76,7 @@
                                 <button id="wealth-age-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-
+                        <!-- wealth-creation-age-goal -->
                         <div id="wealth-creation-age-goal" class="name-input">
                             <h6 class="">At what age do you wish to achieve your goal?</h6>
                             <div class="mb-3">
@@ -85,7 +88,7 @@
                                 <button id="wealth-age-goal-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-
+                        <!-- wealth-creation-upfront-investment -->
                         <div id="wealth-creation-upfront-investment" class="name-input">
                             <h6 class="">How much have you saved for your goal?</h6>
                             <div class="mb-3">
@@ -97,7 +100,7 @@
                                 <button id="wealth-investment-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-
+                        <!-- wealth-creation-risk -->
                         <div id="wealth-creation-risk" class="name-input">
                             <h6 class="">What is your risk aptitude?</h6>
                             <div class="radion mb-3">
@@ -125,15 +128,18 @@
                             </div>
                             <div class="ms-0">
                                 <button id="wealth-risk-previous" class="btn btn-primary">Previous</button>
+                                <button id="wealth-risk-continue" class="btn btn-primary">Continue</button>
                             </div>
                             <div class="">
-                                
+
 
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Do you need help?
-                                </button>
+                               <div class="d-flex justify-content-end">
+                                <a  class="btn text-danger" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Do you need help?
+                               </a>
+                               </div>
 
                                 <!-- Modal -->
                                 <div class="modal  fade" id="exampleModal" tabindex="-1"
@@ -145,8 +151,8 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="text-cente">
+                                            <div id="wealth-risk-question-area" class="modal-body">
+                                                <div class="text-center">
                                                     <h4 class="text-center" id="exampleModalLabel">Calculate Risk and
                                                         Demographic Score</h4>
                                                     <p class="text-center">6Questions to know your demographic style</p>
@@ -157,7 +163,7 @@
                                                         <h5 class="">What is the first though to cross your mind, when
                                                             you invest your money?</h5>
 
-                                                        <div class=" mb-3">
+                                                        <div class="question-area mb-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault1"
@@ -189,8 +195,10 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-one-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-one-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-one-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-one-next" type="button"
+                                                                class="btn btn-primary">Next</button>
                                                         </div>
 
                                                     </div>
@@ -198,9 +206,10 @@
 
                                                     <!-- question box 2-->
                                                     <div id="wealth-question-two" class="question-box">
-                                                        <h5 class="">What do you normally associate with the world 'risk'?</h5>
+                                                        <h5 class="">What do you normally associate with the world
+                                                            'risk'?</h5>
 
-                                                        <div class=" mb-3">
+                                                        <div class="question-area mb-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault1"
@@ -232,17 +241,20 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-two-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-two-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-two-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-two-next" type="button"
+                                                                class="btn btn-primary">Next</button>
                                                         </div>
 
                                                     </div>
 
                                                     <!-- question box 3-->
                                                     <div id="wealth-question-three" class="question-box">
-                                                        <h5 class="">Would you prefer to run your own business or be a salaried employee?</h5>
+                                                        <h5 class="">Would you prefer to run your own business or be a
+                                                            salaried employee?</h5>
 
-                                                        <div class=" mb-3">
+                                                        <div class="question-area mb-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault1"
@@ -255,7 +267,8 @@
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault2">
                                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                                    Being a salaried employee while running a part-time business
+                                                                    Being a salaried employee while running a part-time
+                                                                    business
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
@@ -274,17 +287,20 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-three-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-three-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-three-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-three-next" type="button"
+                                                                class="btn btn-primary">Next</button>
                                                         </div>
 
                                                     </div>
 
                                                     <!-- question box 4-->
                                                     <div id="wealth-question-four" class="question-box">
-                                                        <h5 class="">To what extend would you expose your investments to risk, to earn higher returns?</h5>
+                                                        <h5 class="">To what extend would you expose your investments to
+                                                            risk, to earn higher returns?</h5>
 
-                                                        <div class=" mb-3">
+                                                        <div class="question-area mb-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault1"
@@ -316,17 +332,20 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-four-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-four-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-four-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-four-next" type="button"
+                                                                class="btn btn-primary">Next</button>
                                                         </div>
 
                                                     </div>
 
                                                     <!-- question box 5-->
                                                     <div id="wealth-question-five" class="question-box">
-                                                        <h5 class="">How would you feel if the performance of your recent investments are below expectations?</h5>
+                                                        <h5 class="">How would you feel if the performance of your
+                                                            recent investments are below expectations?</h5>
 
-                                                        <div class=" mb-3">
+                                                        <div class="question-area mb-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault1"
@@ -339,7 +358,8 @@
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault2">
                                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                                    Somewhat  upset, but hope that it will improve in the future
+                                                                    Somewhat upset, but hope that it will improve in the
+                                                                    future
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
@@ -353,13 +373,16 @@
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault4">
                                                                 <label class="form-check-label" for="flexRadioDefault4">
-                                                                    Not upset because I know that all investments carry risk
+                                                                    Not upset because I know that all investments carry
+                                                                    risk
                                                                 </label>
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-five-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-five-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-five-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-five-next" type="button"
+                                                                class="btn btn-primary">Next</button>
                                                         </div>
 
                                                     </div>
@@ -367,9 +390,10 @@
 
                                                     <!-- question box 6-->
                                                     <div id="wealth-question-six" class="question-box">
-                                                        <h5 class="">Would you invest in a company that underperformed in the past and caused you losses?</h5>
+                                                        <h5 class="">Would you invest in a company that underperformed
+                                                            in the past and caused you losses?</h5>
 
-                                                        <div class=" mb-3">
+                                                        <div class="question-area mb-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio"
                                                                     name="flexRadioDefault" id="flexRadioDefault1"
@@ -401,15 +425,17 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-six-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-six-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-six-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-six-submit" type="button"
+                                                                class="btn btn-primary">Submit</button>
                                                         </div>
 
                                                     </div>
 
 
                                                     <!-- question box 7-->
-                                                    <div id="wealth-question-seven" class="question-box">
+                                                    <!-- <div id="wealth-question-seven" class="question-box">
                                                         <h5 class="">What is the first though to cross your mind, when
                                                             you invest your money?</h5>
 
@@ -445,16 +471,194 @@
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button id="wealth-question-seven-previous" type="button" class="btn btn-secondary">Previous</button>
-                                                            <button id="wealth-question-seven-next" type="button" class="btn btn-primary">Next</button>
+                                                            <button id="wealth-question-seven-previous" type="button"
+                                                                class="btn btn-secondary">Previous</button>
+                                                            <button id="wealth-question-seven-next" type="button"
+                                                                class="btn btn-primary">Next</button>
                                                         </div>
 
-                                                    </div>
+                                                    </div> -->
                                                 </div>
 
-                                                
+
                                             </div>
-                                            
+                                            <!-- demographic calculation -->
+                                            <div id="wealth-demographic-calculation">
+                                                <div class="modal-body">
+                                                    <div class="container">
+                                                        <div class="text-center mb-3">
+                                                            <h4 class="text-" id="exampleModalLabel">Calculate
+                                                                Demographic
+                                                                Score</h4>
+
+                                                        </div>
+                                                        <div class="calculate-demographic-score">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Gender</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="male">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Male</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="female">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Female</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Income</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="below-crore">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Below 1 crore</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="above-crore">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Above 1 crore</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Educational Background</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="graduate">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Graduate &
+                                                                                Above</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="undergraduate">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Under
+                                                                                Graduate</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Indicative Investment Horizon</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="below-years">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Below 3 years</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="above-years">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Above 3 years</label>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <!-- right side -->
+                                                                <div class="col-lg-6">
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Age</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="below-age">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Below 60
+                                                                                years</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="above-age">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Above 60
+                                                                                years</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Occupation</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="self">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Self employed</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="salaried">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Salaried</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <h5 for="">Experience investing</h5>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio1" value="below-invest">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio1">Below 3 years</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="inlineRadioOptions"
+                                                                                id="inlineRadio2" value="above-invest">
+                                                                            <label class="form-check-label"
+                                                                                for="inlineRadio2">Above 3 years</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" text-center mt-3">
+                                                            <button id="wealth-demographic-score-back" type="button"
+                                                                class="btn btn-secondary">Back</button>
+                                                            <button id="wealth-demographic-score-evaluate" type="button"
+                                                                class="btn btn-secondary">Evaluate Now</button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+<!-- demographic risk quotient -->
+
+                                            <div id="wealth-demographic-risk-quotient">
+                                                <div class="modal-body">
+                                                    <div class="container">
+                                                        <div class="text-center  mb-3">
+                                                            <h4 class="text-" id="exampleModalLabel">Your Risk Quotient</h4>
+                                                            <p class="">Answer the following questions to know your risk profile</p>
+                                                            <img src="" alt="" class="">
+                                                            <h4 class="">You Are a High Risk Investor</h4>
+                                                            <p class="">As a growth investor, your primary objective is to grow your money aggressively, over medium to long term. You may have the experience and capability to take added risks and do not easily get affected by short term volatility. At the back of your mind, you are aware that you could get back lesser than what you invested bur are willing to the riskh in a bid to grow your money.</p>
+                                                        </div>
+                                                        
+                                                        <div class=" text-center mt-3">
+                                                            <button id="wealth-demographic-score-evalute" type="button"
+                                                                class="btn btn-secondary">Evaluate Now</button>
+                                                        </div>
+                                                        <div class="text-center mt-2 d-flex align-items-center justify-content-center">
+                                                            label Not convinced? <a href="" class="btn">Evaluate again</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

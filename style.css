@@ -15,17 +15,24 @@
     background-color: #B02A30;
     opacity: 100%
 }
-#wealth-creation .wealth-creation{
-    height:100vh;width:100vw;display:grid;place-items:center
+
+#wealth-creation .wealth-creation {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center
 }
+
 #wealth-creation .calculator-area {
     padding: 40px 60px;
     box-shadow: 10px 10px 30px grey;
     border-radius: 10px;
 }
+
 #wealth-creation .name-input {
     background-color: #FDF5E1;
     padding: 80px 30px;
+    border-radius: 10px;
 }
 
 #wealth-creation ol {
@@ -41,49 +48,82 @@
     content: counter(my-awesome-counter) ") ";
 }
 
-#wealth-creation .calculator-area-input input[type=text]{
+#wealth-creation .calculator-area-input input[type=text] {
     border-radius: 40px;
     padding: 10px 15px;
     box-shadow: none;
-    border:1px solid #fff;
+    border: 1px solid #fff;
 }
-#wealth-creation .calculator-area-input input[type=text]:hover{
-    
+
+#wealth-creation .calculator-area-input input[type=text]:hover {
+
     border: 1px solid #B02A30;
 }
-#wealth-creation .calculator-area-input button{
+
+#wealth-creation .calculator-area-input button {
     border-radius: 50px;
     background-color: #B02A30;
     border: 1px solid #fff;
 }
-#wealth-creation .calculator-area-input button:hover{
+
+#wealth-creation .calculator-area-input button:hover {
     background-color: #FDF5E1;
     border: 1px solid #B02A30;
     color: #B02A30;
 }
-#wealth-creation .calculator-area-input input[type=radio]:checked:after{
+
+#wealth-creation .calculator-area-input input[type=radio]:checked:after {
     background-color: red;
 }
-/* #wealth-creation  .question-box{margin:50px 200px;} */
-#wealth-creation  .question-box h5{background-color: #B02A30;color: #fff; padding: 30px 20px; border-radius: 10px;}
 
-#wealth-creation {}
+/* #wealth-creation  .question-box{margin:50px 200px;} */
+#wealth-creation .question-box h5 {
+    background-color: #B02A30;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+#wealth-creation .question-box .question-area .form-check {
+    font-size: 20px;
+}
+
+#wealth-creation .question-area,
+#wealth-creation .calculate-demographic-score {
+    background-color: #FDF5E1;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
 #wealth-question-two,
 #wealth-question-three,
 #wealth-question-four,
 #wealth-question-five,
 #wealth-question-six,
-#wealth-question-seven{
-    display: none;
-}
-
-#wealth-creation {}
-
+#wealth-question-seven,
 #wealth-creation-annual-income,
 #wealth-creation-financial-income,
 #wealth-creation-current-age,
 #wealth-creation-age-goal,
 #wealth-creation-upfront-investment,
-#wealth-creation-risk{display: none;}
+#wealth-creation-risk,
+#wealth-demographic-calculation,
+#wealth-demographic-risk-quotient {
+    display: none;
+}
 
-.modal{width: 100vw;height: 100vh;}
+#wealth-creation {}
+
+/* #wealth-creation-annual-income,
+#wealth-creation-financial-income,
+#wealth-creation-current-age,
+#wealth-creation-age-goal,
+#wealth-creation-upfront-investment,
+#wealth-creation-risk,#wealth-risk-question-area, #wealth-demographic-risk-quotient {
+    display: none;
+} */
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+}

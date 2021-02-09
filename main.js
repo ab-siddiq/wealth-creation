@@ -149,14 +149,14 @@ const wealthRiskPrevious = document.getElementById("wealth-risk-previous");
 
 
 wealthRiskPrevious.addEventListener("click", function () {
-    const riskInput = document.getElementById("wealth-risk").value;
-
+    // const riskInput = document.getElementById("wealth-risk").value;
+    console.log("clk");
     const wealthRisk = document.getElementById("wealth-creation-risk");
     const wealthInvestment = document.getElementById("wealth-creation-upfront-investment");
     wealthRisk.style.display = "none";
     wealthInvestment.style.display = "block";
     
-    document.getElementById("risk-display").innerHTML  = riskInput;
+    // document.getElementById("risk-display").innerHTML  = riskInput;
 })
 
 
@@ -283,7 +283,7 @@ wealthQuestionFiveNext.addEventListener("click", function () {
 
 // question six
 const wealthQuestionSixPrevious = document.getElementById("wealth-question-six-previous");
-const wealthQuestionSixNext = document.getElementById("wealth-question-six-next");
+const wealthQuestionSixSubmit = document.getElementById("wealth-question-six-submit");
 
 wealthQuestionSixPrevious.addEventListener("click", function () {
     const wealthQuestionSix = document.getElementById("wealth-question-six");
@@ -293,40 +293,42 @@ wealthQuestionSixPrevious.addEventListener("click", function () {
     
 })
 
-wealthQuestionSixNext.addEventListener("click", function () {
+wealthQuestionSixSubmit.addEventListener("click", function () {
     // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
     // console.log(annualIncomeInput);
 
 
-    const wealthQuestionSeven = document.getElementById("wealth-question-seven");
-    const wealthQuestionSix = document.getElementById("wealth-question-six");
-    wealthQuestionSeven.style.display = "block";
-    wealthQuestionSix.style.display = "none";
+    const wealthDemographicCalculation = document.getElementById("wealth-demographic-calculation");
+    const wealthRiskQuestionArea = document.getElementById("wealth-risk-question-area");
+    wealthDemographicCalculation.style.display = "block";
+    wealthRiskQuestionArea.style.display = "none";
 
     // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
 })
 
-// question seven
-const wealthQuestionSevenPrevious = document.getElementById("wealth-question-seven-previous");
-const wealthQuestionSevenNext = document.getElementById("wealth-question-seven-next");
+// demographic score calculation
+const wealthDemographicsScoreBack = document.getElementById("wealth-demographic-score-back");
+const wealthDemographicScoreEvaluate = document.getElementById("wealth-demographic-score-evaluate");
 
-wealthQuestionSevenPrevious.addEventListener("click", function () {
+wealthDemographicsScoreBack.addEventListener("click", function () {
     const wealthQuestionSix = document.getElementById("wealth-question-six");
-    const wealthQuestionSeven = document.getElementById("wealth-question-seven");
+    const wealthRiskQuestionArea = document.getElementById("wealth-risk-question-area");
+    const wealthDemographicCalculation = document.getElementById("wealth-demographic-calculation");
     wealthQuestionSix.style.display = "block";
-    wealthQuestionSeven.style.display = "none";
+    wealthRiskQuestionArea.style.display = "block";
+    wealthDemographicCalculation.style.display = "none";
     
 })
 
-wealthQuestionSevenNext.addEventListener("click", function () {
+wealthDemographicScoreEvaluate.addEventListener("click", function () {
     // const annualIncomeInput = document.getElementById("wealth-annual-income").value;
     // console.log(annualIncomeInput);
 
 
-    const wealthQuestionSeven = document.getElementById("wealth-question-seven");
-    const wealthQuestionSix = document.getElementById("wealth-question-six");
-    wealthQuestionSeven.style.display = "block";
-    wealthQuestionSix.style.display = "none";
+    const wealthDemographicCalculation = document.getElementById("wealth-demographic-calculation");
+    const wealthDemographicRiskQuotient = document.getElementById("wealth-demographic-risk-quotient");
+    wealthDemographicRiskQuotient.style.display = "block";
+    wealthDemographicCalculation.style.display = "none";
 
     // document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
 })
