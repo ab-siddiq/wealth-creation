@@ -14,7 +14,7 @@
 <body>
     <section id="wealth-creation">
         <div class="container wealth-creation">
-            <div class="calculator-area">
+            <div id="calculator-area" class="calculator-area">
                 <h2 class="text-center mb-2">Wealth Creation</h2>
                 <div class="d-block mb-5">
                     <hr class="line m-auto">
@@ -29,106 +29,121 @@
                     <div class="col-lg-6 calculator-area-input">
                         <h2 class="">Hi User, let's take a step closer to your dreams</h2>
                         <p class="">We look forward to help create wealth for you</p>
-                        <!-- wealth-creation-name -->
-                        <div id="wealth-creation-name" class="name-input">
+                        <!-- -name -->
+                        <div id="name-field" class="name-input">
                             <h6 class="">Your Good Name, Please?</h6>
                             <div class="mb-3">
-                                <input id="wealth-name" class="form-control" type="text" name="" value=""
+                                <input id="name-input" class="form-control" type="text" name="" value="siddiq"
                                     placeholder="Your good name">
                             </div>
                             <div class="ms-0">
-                                <button id="wealth-name-next" class="btn btn-primary">Next</button>
+                                <button onclick="displayHide('age-field','name-field','name-input','name-display')" id="wealth-name-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        <!-- wealth-creation-annual-income -->
-                        <div id="wealth-creation-annual-income" class="name-input">
-                            <h6 class="">Your Annual Income?</h6>
+                        <!-- current-age -->
+                        <div id="age-field" class="name-input">
+                            <h6 class="">Your Age Now?</h6>
                             <div class="mb-3">
-                                <input id="wealth-annual-income" class="form-control" type="text" name="" value=""
-                                    placeholder="Annual income">
-                            </div>
-                            <div class="ms-0">
-                                <button onclick="needHelpQuestionButtonEvent('wealth-creation-name','wealth-creation-annual-income',false)" id="wealth-annual-previous" class="btn btn-primary">Previous</button>
-                                <button id="wealth-annual-next" class="btn btn-primary">Next</button>
-                            </div>
-                        </div>
-                        <!-- wealth-creation-financial-income -->
-                        <div id="wealth-creation-financial-income" class="name-input">
-                            <h6 class="">The Goal Costs Now?</h6>
-                            <div class="mb-3">
-                                <input id="wealth-financial-income" class="form-control" type="text" name="" value=""
-                                    placeholder="Goal cost">
-                            </div>
-                            <div class="ms-0">
-                                <button onclick="needHelpQuestionButtonEvent('wealth-creation-annual-income','wealth-creation-financial-income',false)" id="wealth-financial-previous" class="btn btn-primary">Previous</button>
-                                <button id="wealth-financial-next" class="btn btn-primary">Next</button>
-                            </div>
-                        </div>
-                        <!-- wealth-creation-current-age -->
-                        <div id="wealth-creation-current-age" class="name-input">
-                            <h6 class="">Your Current Age?</h6>
-                            <div class="mb-3">
-                                <input id="wealth-current-age" class="form-control" type="text" name="" value=""
+                                <input id="your-current-age" class="form-control" type="number" name="" value="38"
                                     placeholder="Current age">
                             </div>
                             <div class="ms-0">
-                                <button onclick="needHelpQuestionButtonEvent('wealth-creation-financial-income','wealth-creation-current-age',false)" id="wealth-age-previous" class="btn btn-primary">Previous</button>
-                                <button id="wealth-age-next" class="btn btn-primary">Next</button>
+                                <button onclick="displayHide('name-field','age-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="displayHide('annual-income-field','age-field','your-current-age','age-display')"  class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        <!-- wealth-creation-age-goal -->
-                        <div id="wealth-creation-age-goal" class="name-input">
-                            <h6 class="">At What Age You Want to Meet the Goal?</h6>
+                        <!-- annual-income -->
+                        <div id="annual-income-field" class="name-input">
+                            <h6 class="">Your Annual Income?</h6>
                             <div class="mb-3">
-                                <input id="wealth-age-goal" class="form-control" type="text" name="" value=""
-                                    placeholder="Age to meet the goal">
+                                <input id="your-annual-income" class="form-control" type="number" name="" value="1500000"
+                                    placeholder="Annual income">
                             </div>
                             <div class="ms-0">
-                                <button onclick="needHelpQuestionButtonEvent('wealth-creation-current-age','wealth-creation-age-goal',false)" id="wealth-age-goal-previous" class="btn btn-primary">Previous</button>
-                                <button id="wealth-age-goal-next" class="btn btn-primary">Next</button>
+                                <button onclick="displayHide('age-field','annual-income-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="displayHide('child-current-age-field','annual-income-field','your-annual-income','annual-income-display')"  class="btn btn-primary">Next</button>
                             </div>
                         </div>
-                        <!-- wealth-creation-upfront-investment -->
-                        <div id="wealth-creation-upfront-investment" class="name-input">
-                            <h6 class="">What you can  invest now in Ekush First Unit Fund??</h6>
+                        <!-- child-current-age-field -->
+                        <div id="child-current-age-field" class="name-input">
+                            <h6 class="">Your Child's Age Now?</h6>
                             <div class="mb-3">
-                                <input id="wealth-investment" class="form-control" type="text" name="" value=""
+                                <input id="your-child-current-age" class="form-control" type="number" name="" value="5"
+                                    placeholder="Child's age now">
+                            </div>
+                            <div class="ms-0">
+                                <button onclick="displayHide('annual-income-field','child-current-age-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="displayHide('need-amount-at-child-age-field','child-current-age-field','your-child-current-age','child-age-display')"  class="btn btn-primary">Next</button>
+                            </div>
+                        </div>
+                        <!-- need-amount-at-child-age-field -->
+                        <div id="need-amount-at-child-age-field" class="name-input">
+                            <h6 class="">At What Age of Your Child, You Need the Amount?</h6>
+                            <div class="mb-3">
+                                <input id="need-amount-at-child-age" class="form-control" type="number" name="" value="20"
+                                    placeholder="Need amount at child age">
+                            </div>
+                            <div class="ms-0">
+                                <button onclick="displayHide('child-current-age-field','need-amount-at-child-age-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="displayHide('current-education-cost-field','need-amount-at-child-age-field','need-amount-at-child-age','need-amount-at-child-age-display')"  class="btn btn-primary">Next</button>
+                            </div>
+                        </div>
+                       
+                        <!-- current-education-cost-field -->
+                        <div id="current-education-cost-field" class="name-input">
+                            <h6 class="">How Much The Education Costs Now?</h6>
+                            <div class="mb-3">
+                                <input id="current-education-cost" class="form-control" type="number" name="" value="15000000"
+                                    placeholder="Current education cost">
+                            </div>
+                            <div class="ms-0">
+                                <button onclick="displayHide('need-amount-at-child-age-field','current-education-cost-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="displayHide('possible-investment-field','current-education-cost-field','current-education-cost','education-cost-display')"  class="btn btn-primary">Next</button>
+                            </div>
+                        </div>
+                        <!-- possible-investment-field -->
+                        <div id="possible-investment-field" class="name-input">
+                            <h6 class="">You Want to Invest?</h6>
+                            <div class="mb-3">
+                                <input id="possible-investment" class="form-control" type="number" name="" value="100000"
                                     placeholder="Possible invest in ekush">
                             </div>
                             <div class="ms-0">
-                                <button onclick="needHelpQuestionButtonEvent('wealth-creation-age-goal','wealth-creation-upfront-investment',false)" id="wealth-investment-previous" class="btn btn-primary">Previous</button>
-                                <button id="wealth-investment-next" class="btn btn-primary">Next</button>
+                                <button onclick="displayHide('current-education-cost-field','possible-investment-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="displayHide('risk-appetite-field','possible-investment-field','possible-investment','possible-investment-display')"  class="btn btn-primary">Next</button>
                             </div>
                         </div>
                         <!-- wealth-creation-risk -->
-                        <div id="wealth-creation-risk" class="name-input">
+                        <div id="risk-appetite-field" class="name-input">
                             <h6 class="">Your Risk Appetite?</h6>
                             <div class="radion mb-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="risk"
-                                        id="risk1" >
+                                    <input onclick="getSetRadioButtonValue('risk1','risk-display')" class="form-check-input" type="radio" name="risk"
+                                        id="risk1"  value="1">
                                     <label class="form-check-label" for="risk1">
-                                        Low Risk
+                                        Safe
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="risk"
-                                        id="risk2">
+                                    <input onclick="getSetRadioButtonValue('risk2','risk-display')" class="form-check-input" type="radio" name="risk"
+                                        id="risk2" value="2">
                                     <label class="form-check-label" for="risk2">
-                                        Moderate Risk
+                                        Moderate
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="risk"
-                                        id="risk3">
+                                    <input onclick="getSetRadioButtonValue('risk3','risk-display')" class="form-check-input" type="radio" name="risk"
+                                        id="risk3" value="3">
                                     <label class="form-check-label" for="risk3">
-                                        High Risk
+                                        Aggressive
                                     </label>
                                 </div>
                             </div>
                             <div class="ms-0">
-                                <button onclick="needHelpQuestionButtonEvent('wealth-creation-upfront-investment','wealth-creation-risk',false)" id="wealth-risk-previous" class="btn btn-primary">Previous</button>
-                                <button id="wealth-risk-continue" class="btn btn-primary">Continue</button>
+                                <!-- <button onclick="needHelpQuestionButtonEvent('wealth-creation-upfront-investment','wealth-creation-risk',false)" id="wealth-risk-previous" class="btn btn-primary">Previous</button>
+                                <button id="wealth-risk-continue" class="btn btn-primary">Continue</button> -->
+                                <button onclick="displayHide('possible-investment-field','risk-appetite-field')" class="btn btn-primary">Previous</button>
+                                <button onclick="getInputValue();displayHide('calculator-output','calculator-area')"  class="btn btn-primary">Continue</button>
                             </div>
                             <div class="">
 
@@ -687,15 +702,31 @@
                             <p class="">Click below to change answers</p>
                             <ol>
                                 <li class="">Name: <span id="name-display"></span></li>
-                                <li class="">Annual Income: <span id="annual-income-display"></span></li>
-                                <li class="">Cost of your financial income: <span id="financial-income-display"></span>
+                                <li class="">Your age now: <span id="age-display"></span></li>
+                                <li class="">Your Annual Income: <span id="annual-income-display"></span>
                                 </li>
-                                <li class="">Current Age: <span id="current-age-display"></span></li>
-                                <li class="">Age as an goal achievement: <span id="age-goal-display"></span></li>
-                                <li class="">Upfront Investment: <span id="investment-display"></span></li>
-                                <li class="">Risk Appetite: <span id="risk-display"></span></li>
+                                <li class="">Your Child's Age Now: <span id="child-age-display"></span></li>
+                                <li class="">At What Age of Your Child, You Need the Amount: <span id="need-amount-at-child-age-display"></span></li>
+                                <li class="">How Much The Education Costs Now: <span id="education-cost-display"></span></li>
+                                <li class="">You Want to Invest: <span id="possible-investment-display"></span></li>
+                                <li class="">Your risk Appetite: <span id="risk-display"></span></li>
                             </ol>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="calculator-output" class="calculation-area text-center">
+                <div class="row output-style">
+                    <div class="col output-top">
+                        
+                    </div>
+                </div>
+                <div class="row output-style">
+                    <div class="col-6 output-bottom-left">
+                        
+                    </div>
+                    <div class="col-6 output-bottom-right">
+                        
                     </div>
                 </div>
             </div>

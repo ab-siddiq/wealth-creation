@@ -33,6 +33,7 @@
     background-color: #FDF5E1;
     padding: 80px 30px;
     border-radius: 10px;
+    min-height: 330px;
 }
 
 #wealth-creation ol {
@@ -48,14 +49,14 @@
     content: counter(my-awesome-counter) ") ";
 }
 
-#wealth-creation .calculator-area-input input[type=text] {
+#wealth-creation .calculator-area-input input[type=text], #wealth-creation .calculator-area-input input[type=number]{
     border-radius: 40px;
     padding: 10px 15px;
     box-shadow: none;
     border: 1px solid #fff;
 }
 
-#wealth-creation .calculator-area-input input[type=text]:hover {
+#wealth-creation .calculator-area-input input[type=text]:hover , #wealth-creation .calculator-area-input input[type=number]:hover {
 
     border: 1px solid #B02A30;
 }
@@ -101,14 +102,16 @@
 #wealth-question-five,
 #wealth-question-six,
 #wealth-question-seven,
-#wealth-creation-annual-income,
-#wealth-creation-financial-income,
-#wealth-creation-current-age,
-#wealth-creation-age-goal,
-#wealth-creation-upfront-investment,
-#wealth-creation-risk,
+
+#age-field,
+#annual-income-field,
+#child-current-age-field,
+#need-amount-at-child-age-field,
+#current-education-cost-field,
+#possible-investment-field,
+#risk-appetite-field,
 #wealth-demographic-calculation,
-#wealth-demographic-risk-quotient, .question-weight {
+#wealth-demographic-risk-quotient, .question-weight,#calculator-output {
     display: none;
 }
 
@@ -133,3 +136,12 @@
     width: 100vw;
     height: 100vh;
 }
+
+#wealth-creation .output-style{
+    background-color: #EFF7FE;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+#wealth-creation strong{font-size: 2rem; color: #EF4B27;}
